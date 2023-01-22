@@ -1,0 +1,86 @@
+python -m pip install -U pip --user 
+pip install virtualenv
+virtualenv env       
+.\env\Scripts\activate.ps1
+OR ,
+source rr_venv/bin/activate
+
+TO UNDERSTAND THE WORKING OF annotate
+
+FIRST GO TO MODELS.PY AND THEN TO VIEW.PY
+author is a foreign key of book .
+So I want to know all the total copies of book sold for a particular author .
+
+pip install gunicorn # web server used for heroku 
+# django run server
+python manage.py runserver
+
+pip install gunicorn
+pip install django_heroku
+
+pip freeze > requirements.txt
+
+heroku login
+
+Procfile:
+    web: gunicorn user_project.wsgi # Django user_project = Project Name
+	web: gunicorn app:app # flask 
+
+
+git init
+
+git add .   # move all change to stage
+
+git commit -m "Initialize commit"
+
+git remote -v # show all connections 
+
+https://book-inventory-library.herokuapp.com/ | https://git.heroku.com/book-inventory-library.git
+
+    SETTINGS.PY file 
+    
+    set debug  = False in setting.py 
+
+    STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+    # Activate Django-Heroku.
+    django_heroku.settings(locals())
+git remote add herk1 https://git.heroku.com/book-inventory-library.git
+git push herk1 master
+heroku run python manage.py migrate
+heroku open
+
+
+git remote add origin https://github.com/runitrupam/Django_anotate_all_sold_copies.git
+#git branch -M main
+git push -u origin master
+
+
+
+django-admin startproject dj_managers_query_sets
+cd test_app
+
+
+url dispatcher , 
+    link goes to my dj_managers_query_sets( .urls) --> redirected to the app (test_app) .urls.
+    From view (we have different functions to catch the urls ) . and from here we render the html pages.
+
+python manage.py 
+    shows all commands of django
+
+python manage.py makemigrations
+    for if there is change in the schema 
+
+python manage.py migrate
+
+
+Tables required for authenticate(admin)
+python manage.py createsuperuser    
+
+
+add you model 
+    register your model (Contact) in admin. -- IMPORTANT
+
+    in settings of project(hello) -> add the app in that . 
+    INSTALLED_APPS = [
+        'test_app.apps.TestAppConfig',
