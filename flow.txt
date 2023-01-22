@@ -35,29 +35,10 @@ git commit -m "Initialize commit"
 
 git remote -v # show all connections 
 
-https://book-inventory-library.herokuapp.com/ | https://git.heroku.com/book-inventory-library.git
-
-    SETTINGS.PY file 
-    
-    set debug  = False in setting.py 
-
-    STATIC_ROOT = os.path.join(BASE_DIR, "static")
-
-    # Activate Django-Heroku.
-    django_heroku.settings(locals())
-git remote add herk1 https://git.heroku.com/book-inventory-library.git
-git push herk1 master
-heroku run python manage.py migrate
-heroku open
-
-
-git remote add origin https://github.com/runitrupam/Django_anotate_all_sold_copies.git
 #git branch -M main
 git push -u origin master
 
-
-
-django-admin startproject dj_managers_query_sets
+django-admin startproject min_calendar
 cd test_app
 
 
@@ -76,11 +57,3 @@ python manage.py migrate
 
 Tables required for authenticate(admin)
 python manage.py createsuperuser    
-
-
-add you model 
-    register your model (Contact) in admin. -- IMPORTANT
-
-    in settings of project(hello) -> add the app in that . 
-    INSTALLED_APPS = [
-        'test_app.apps.TestAppConfig',
